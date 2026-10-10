@@ -8,7 +8,7 @@ import { StationCanvas } from './StationCanvas';
 import { BandChart } from './BandChart';
 import { RiskCard } from './RiskCard';
 import { Scrubber } from './Scrubber';
-import { Play, RotateCw, CheckCircle, ShieldAlert } from 'lucide-react';
+import { Play, RotateCw, CheckCircle, ShieldAlert, ArrowRight } from 'lucide-react';
 import defaultAssumptions from '../../data/assumptions.default.json';
 
 export const Rehearsal: React.FC = () => {
@@ -148,11 +148,11 @@ export const Rehearsal: React.FC = () => {
             <button
               onClick={() => setSelectedPlanId('applied')}
               style={{
-                padding: '0.4rem 0.8rem',
+                padding: '0.45rem 0.85rem',
                 borderRadius: '6px',
                 fontSize: '0.8rem',
-                fontWeight: 600,
-                backgroundColor: selectedPlanId === 'applied' ? 'var(--accent-blue)' : 'transparent',
+                fontWeight: 700,
+                backgroundColor: selectedPlanId === 'applied' ? 'var(--accent-purple)' : 'transparent',
                 color: selectedPlanId === 'applied' ? '#FFFFFF' : 'var(--text-muted)',
               }}
             >
@@ -161,11 +161,11 @@ export const Rehearsal: React.FC = () => {
             <button
               onClick={() => setSelectedPlanId('baseline')}
               style={{
-                padding: '0.4rem 0.8rem',
+                padding: '0.45rem 0.85rem',
                 borderRadius: '6px',
                 fontSize: '0.8rem',
-                fontWeight: 600,
-                backgroundColor: selectedPlanId === 'baseline' ? 'var(--accent-blue)' : 'transparent',
+                fontWeight: 700,
+                backgroundColor: selectedPlanId === 'baseline' ? 'var(--accent-purple)' : 'transparent',
                 color: selectedPlanId === 'baseline' ? '#FFFFFF' : 'var(--text-muted)',
               }}
             >
@@ -178,17 +178,18 @@ export const Rehearsal: React.FC = () => {
             onClick={handleRunSimulation}
             disabled={isSimulating}
             className="btn-primary"
-            style={{ fontSize: '0.875rem' }}
+            style={{ fontSize: '0.875rem', gap: '0.6rem' }}
           >
             {isSimulating ? (
               <>
                 <RotateCw size={15} className="animate-spin" />
-                <span>Simulating ({progress?.done || 0}/200)...</span>
+                <span>SIMULATING ({progress?.done || 0}/200)...</span>
               </>
             ) : (
               <>
                 <Play size={15} />
-                <span>Run Simulation (200 Seeds)</span>
+                <span>START SIMULATION (200 SEEDS)</span>
+                <ArrowRight size={15} />
               </>
             )}
           </button>

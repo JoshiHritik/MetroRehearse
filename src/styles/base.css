@@ -13,6 +13,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--bg-canvas);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 24px 24px;
   color: var(--text-main);
   font-family: var(--font-sans);
   font-size: 15px;
@@ -36,7 +40,34 @@ html[lang="gu"],
   flex-direction: column;
 }
 
-/* Operational tabular numbers */
+/* --- NEO-BRUTALIST TYPOGRAPHY & TECHNICAL LABELS --- */
+.hero-title {
+  font-family: var(--font-sans);
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  color: var(--text-main);
+  line-height: 1.15;
+}
+
+.hero-number {
+  font-family: var(--font-mono);
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--text-main);
+}
+
+.meta-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
 .tabular-nums,
 .num-metric {
   font-variant-numeric: tabular-nums;
@@ -44,7 +75,7 @@ html[lang="gu"],
   letter-spacing: -0.02em;
 }
 
-/* Standard Assumption Badge (A) */
+/* --- BADGES & STATUS INDICATORS --- */
 .badge-assumed {
   display: inline-flex;
   align-items: center;
@@ -63,19 +94,47 @@ html[lang="gu"],
   cursor: help;
 }
 
-/* Card glass aesthetics */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.725rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* --- CONTAINERS & FLOATING WHITE CARDS --- */
 .glass-panel {
-  background: var(--bg-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .glass-panel:hover {
   border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+}
+
+/* Technical radar schematic container (dark mode inversion for visualizations) */
+.radar-panel {
+  background: var(--radar-bg);
+  color: var(--radar-text);
+  border: 1px solid var(--radar-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Touch targets for operational mobile use */
@@ -113,23 +172,26 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
+/* --- BUTTON SYSTEM: DEEP PURPLE PRIMARY WITH FORWARD PROGRESSION --- */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--accent-blue), #1D4ED8);
+  background: var(--accent-purple);
   color: #FFFFFF;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 0.85rem;
   padding: 0.65rem 1.25rem;
   border-radius: var(--radius-md);
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(107, 56, 251, 0.35);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
 }
 
 .btn-primary:hover:not(:disabled) {
+  background: var(--accent-purple-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 4px 14px rgba(107, 56, 251, 0.45);
 }
 
 .btn-primary:active:not(:disabled) {
@@ -146,18 +208,21 @@ select:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: var(--bg-surface-elevated);
+  background: var(--bg-surface);
   color: var(--text-main);
   border: 1px solid var(--border-medium);
-  font-weight: 500;
-  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.825rem;
+  padding: 0.65rem 1.15rem;
   border-radius: var(--radius-md);
-  transition: background var(--transition-fast), border-color var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .btn-secondary:hover:not(:disabled) {
-  background: var(--bg-surface-hover);
-  border-color: var(--border-focus);
+  background: var(--bg-surface-elevated);
+  border-color: var(--text-main);
+  transform: translateY(-1px);
 }
 
 .btn-danger {
@@ -165,28 +230,25 @@ select:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: rgba(239, 68, 68, 0.15);
-  color: #EF4444;
-  border: 1px solid rgba(239, 68, 68, 0.35);
-  font-weight: 600;
+  background: var(--status-critical-bg);
+  color: var(--status-critical);
+  border: 1px solid var(--status-critical-border);
+  font-weight: 700;
   padding: 0.65rem 1.25rem;
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
 }
 
 .btn-danger:hover:not(:disabled) {
-  background: rgba(239, 68, 68, 0.25);
-  border-color: #EF4444;
+  background: rgba(220, 38, 38, 0.15);
+  border-color: var(--status-critical);
 }
 
 /* Animations */
 @keyframes pulse-subtle {
-
-  0%,
-  100% {
+  0%, 100% {
     opacity: 1;
   }
-
   50% {
     opacity: 0.6;
   }
@@ -200,7 +262,6 @@ select:focus-visible {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }

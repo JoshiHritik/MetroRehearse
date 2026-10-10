@@ -1,61 +1,81 @@
 :root {
-  /* Surface colors - Control room dark theme default */
-  --bg-canvas: #0B1220;
-  --bg-surface: #111C33;
-  --bg-surface-elevated: #182747;
-  --bg-surface-hover: #1E3159;
-  --bg-glass: rgba(17, 28, 51, 0.85);
-  --bg-glass-card: rgba(15, 23, 42, 0.75);
+  /* 1. Core Base / Background - Warm off-white / cream engineering blueprint */
+  --bg-canvas: #F9F8F6;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F4F3EF;
+  --bg-surface-hover: #ECEAE4;
+  --bg-glass: rgba(255, 255, 255, 0.96);
+  --bg-glass-card: #FFFFFF;
 
-  /* Text & content */
-  --text-main: #F1F5F9;
-  --text-muted: #94A3B8;
+  /* Subtle structural graph-paper blueprint grid */
+  --grid-line: rgba(15, 23, 42, 0.045);
+
+  /* 2. High Contrast Neo-Brutalist Typography */
+  --text-main: #0A0A0A;
+  --text-muted: #475569;
   --text-subtle: #64748B;
-  --text-inverse: #0B1220;
+  --text-inverse: #FFFFFF;
 
   /* Borders & Dividers */
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-medium: rgba(255, 255, 255, 0.16);
-  --border-focus: #38BDF8;
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-medium: rgba(15, 23, 42, 0.15);
+  --border-focus: #6B38FB;
 
   /* Transit Line Accents (GMRC Ahmedabad Metro) */
   --line-north-south: #E11D48;
-  /* Red Line (Motera Stadium - APMC) */
-  --line-north-south-glow: rgba(225, 29, 72, 0.35);
+  --line-north-south-glow: rgba(225, 29, 72, 0.25);
   --line-east-west: #0284C7;
-  /* Blue Line (Thaltej - Vastral) */
-  --line-east-west-glow: rgba(2, 132, 199, 0.35);
+  --line-east-west-glow: rgba(2, 132, 199, 0.25);
 
-  /* Primary Brand & Actions */
-  --accent-cyan: #38BDF8;
-  --accent-blue: #2563EB;
-  --accent-indigo: #4F46E5;
-  --accent-glow: rgba(56, 189, 248, 0.25);
+  /* 3. Semantic Accent Colors */
+  /* Primary Action: Deep Purple / Royal Blue */
+  --accent-purple: #6B38FB;
+  --accent-purple-hover: #5B27E8;
+  --accent-blue: #1D4ED8;
+  --accent-cyan: #0284C7;
+  --accent-glow: rgba(107, 56, 251, 0.25);
 
-  /* Operational State Indicators */
+  /* Warning / Alerts: Crimson Red */
+  --status-critical: #DC2626;
+  --status-critical-bg: #FEF2F2;
+  --status-critical-border: rgba(220, 38, 38, 0.35);
+
+  /* Highlights / Secondary: Bold Orange */
+  --status-caution: #F97316;
+  --status-caution-bg: #FFF7ED;
+  --status-caution-border: rgba(249, 115, 22, 0.35);
+
+  /* Safe / Success: Mint / Neon Green */
   --status-safe: #10B981;
-  --status-safe-bg: rgba(16, 185, 129, 0.15);
-  --status-caution: #F59E0B;
-  --status-caution-bg: rgba(245, 158, 11, 0.15);
-  --status-critical: #EF4444;
-  --status-critical-bg: rgba(239, 68, 68, 0.18);
+  --status-safe-bg: #ECFDF5;
+  --status-safe-border: rgba(16, 185, 129, 0.35);
 
   /* Assumption Flag Token (A) */
-  --tag-assumed-bg: rgba(245, 158, 11, 0.14);
-  --tag-assumed-border: rgba(245, 158, 11, 0.5);
-  --tag-assumed-text: #FBBF24;
+  --tag-assumed-bg: #FEF3C7;
+  --tag-assumed-border: #F59E0B;
+  --tag-assumed-text: #B45309;
 
-  /* Typography */
+  /* 4. Dark Mode Inversion Sub-Components (Radar, 2D Concourse Schematic) */
+  --radar-bg: #080E1A;
+  --radar-surface: #0F172A;
+  --radar-surface-elevated: #1E293B;
+  --radar-border: rgba(56, 189, 248, 0.2);
+  --radar-text: #F8FAFC;
+  --radar-text-muted: #94A3B8;
+  --radar-text-subtle: #64748B;
+  --radar-grid: rgba(56, 189, 248, 0.05);
+
+  /* Typography Fonts */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Gujarati', 'Noto Sans Devanagari', sans-serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', 'Roboto Mono', 'Cascadia Code', monospace;
   --line-height-normal: 1.5;
   --line-height-indic: 1.7;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.35), 0 2px 4px -2px rgba(0, 0, 0, 0.25);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.45), 0 4px 6px -4px rgba(0, 0, 0, 0.35);
-  --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.15);
+  /* Elevation Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 20px rgba(107, 56, 251, 0.2);
 
   /* Radius */
   --radius-sm: 6px;
@@ -69,28 +89,71 @@
 }
 
 [data-theme="light"] {
-  --bg-canvas: #F8FAFC;
+  /* Explicit light theme maps to the warm cream blueprint specification */
+  --bg-canvas: #F9F8F6;
   --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #F1F5F9;
-  --bg-surface-hover: #E2E8F0;
-  --bg-glass: rgba(255, 255, 255, 0.92);
-  --bg-glass-card: rgba(255, 255, 255, 0.85);
+  --bg-surface-elevated: #F4F3EF;
+  --bg-surface-hover: #ECEAE4;
+  --bg-glass: rgba(255, 255, 255, 0.96);
+  --bg-glass-card: #FFFFFF;
 
-  --text-main: #0F172A;
+  --grid-line: rgba(15, 23, 42, 0.045);
+
+  --text-main: #0A0A0A;
   --text-muted: #475569;
-  --text-subtle: #94A3B8;
+  --text-subtle: #64748B;
   --text-inverse: #FFFFFF;
 
-  --border-subtle: rgba(0, 0, 0, 0.08);
-  --border-medium: rgba(0, 0, 0, 0.16);
-  --border-focus: #0284C7;
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-medium: rgba(15, 23, 42, 0.15);
+  --border-focus: #6B38FB;
 
-  --tag-assumed-bg: rgba(217, 119, 6, 0.12);
-  --tag-assumed-border: rgba(217, 119, 6, 0.45);
+  --tag-assumed-bg: #FEF3C7;
+  --tag-assumed-border: #F59E0B;
   --tag-assumed-text: #B45309;
 
-  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 0 20px rgba(2, 132, 199, 0.1);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] {
+  /* Control Room Dark Theme Inversion */
+  --bg-canvas: #0B1220;
+  --bg-surface: #111C33;
+  --bg-surface-elevated: #182747;
+  --bg-surface-hover: #1E3159;
+  --bg-glass: rgba(17, 28, 51, 0.92);
+  --bg-glass-card: rgba(15, 23, 42, 0.85);
+
+  --grid-line: rgba(255, 255, 255, 0.03);
+
+  --text-main: #F1F5F9;
+  --text-muted: #94A3B8;
+  --text-subtle: #64748B;
+  --text-inverse: #0B1220;
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.16);
+  --border-focus: #38BDF8;
+
+  --status-critical: #EF4444;
+  --status-critical-bg: rgba(239, 68, 68, 0.18);
+  --status-critical-border: rgba(239, 68, 68, 0.4);
+
+  --status-caution: #F59E0B;
+  --status-caution-bg: rgba(245, 158, 11, 0.15);
+  --status-caution-border: rgba(245, 158, 11, 0.4);
+
+  --status-safe: #10B981;
+  --status-safe-bg: rgba(16, 185, 129, 0.15);
+  --status-safe-border: rgba(16, 185, 129, 0.4);
+
+  --tag-assumed-bg: rgba(245, 158, 11, 0.14);
+  --tag-assumed-border: rgba(245, 158, 11, 0.5);
+  --tag-assumed-text: #FBBF24;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.45);
 }

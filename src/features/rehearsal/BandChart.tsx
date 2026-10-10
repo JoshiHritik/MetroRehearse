@@ -85,8 +85,8 @@ export const BandChart: React.FC<Props> = ({
           const y = getY(d);
           return (
             <g key={d}>
-              <line x1={padLeft} y1={y} x2={width - padRight} y2={y} stroke="rgba(255, 255, 255, 0.08)" strokeDasharray="3 3" />
-              <text x={padLeft - 8} y={y + 4} fill="#64748B" fontSize="10" textAnchor="end" fontFamily="monospace">
+              <line x1={padLeft} y1={y} x2={width - padRight} y2={y} stroke="rgba(15, 23, 42, 0.08)" strokeDasharray="3 3" />
+              <text x={padLeft - 8} y={y + 4} fill="#64748B" fontSize="10" fontWeight="600" textAnchor="end" fontFamily="monospace">
                 {d.toFixed(1)}
               </text>
             </g>
@@ -98,8 +98,8 @@ export const BandChart: React.FC<Props> = ({
           const x = getX(t);
           return (
             <g key={t}>
-              <line x1={x} y1={padTop} x2={x} y2={height - padBottom} stroke="rgba(255, 255, 255, 0.04)" />
-              <text x={x} y={height - padBottom + 16} fill="#64748B" fontSize="10" textAnchor="middle" fontFamily="monospace">
+              <line x1={x} y1={padTop} x2={x} y2={height - padBottom} stroke="rgba(15, 23, 42, 0.06)" />
+              <text x={x} y={height - padBottom + 16} fill="#64748B" fontSize="10" fontWeight="600" textAnchor="middle" fontFamily="monospace">
                 T+{t}m
               </text>
             </g>
@@ -112,11 +112,11 @@ export const BandChart: React.FC<Props> = ({
           y1={getY(criticalThreshold)}
           x2={width - padRight}
           y2={getY(criticalThreshold)}
-          stroke="#EF4444"
+          stroke="#DC2626"
           strokeWidth="1.5"
           strokeDasharray="4 4"
         />
-        <text x={width - padRight} y={getY(criticalThreshold) - 4} fill="#EF4444" fontSize="9" fontWeight="bold" textAnchor="end">
+        <text x={width - padRight} y={getY(criticalThreshold) - 4} fill="#DC2626" fontSize="9" fontWeight="800" textAnchor="end">
           CRUSH THRESHOLD (4.5)
         </text>
 
@@ -130,15 +130,15 @@ export const BandChart: React.FC<Props> = ({
           strokeWidth="1.5"
           strokeDasharray="4 4"
         />
-        <text x={width - padRight} y={getY(safeThreshold) - 4} fill="#10B981" fontSize="9" fontWeight="bold" textAnchor="end">
+        <text x={width - padRight} y={getY(safeThreshold) - 4} fill="#10B981" fontSize="9" fontWeight="800" textAnchor="end">
           SAFE LIMIT (3.0)
         </text>
 
         {/* Uncertainty Band (q10 to q90) */}
-        <polygon points={bandPolygon} fill="rgba(56, 189, 248, 0.15)" stroke="none" />
+        <polygon points={bandPolygon} fill="rgba(29, 78, 216, 0.12)" stroke="none" />
 
         {/* Median Line (q50) */}
-        <path d={medianPath} fill="none" stroke="#38BDF8" strokeWidth="2.5" />
+        <path d={medianPath} fill="none" stroke="#1D4ED8" strokeWidth="2.5" />
 
         {/* Scrubber vertical bar */}
         <line
@@ -146,10 +146,10 @@ export const BandChart: React.FC<Props> = ({
           y1={padTop}
           x2={scrubberX}
           y2={height - padBottom}
-          stroke="#FBBF24"
-          strokeWidth="2"
+          stroke="#F59E0B"
+          strokeWidth="2.5"
         />
-        <circle cx={scrubberX} cy={padTop + 4} r="4" fill="#FBBF24" />
+        <circle cx={scrubberX} cy={padTop + 4} r="4.5" fill="#F59E0B" />
       </svg>
     </div>
   );

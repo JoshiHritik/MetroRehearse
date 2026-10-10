@@ -216,17 +216,17 @@ export const TopBar: React.FC = () => {
         </button>
 
         {/* Language Picker */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem', backgroundColor: 'var(--bg-surface-elevated)', padding: '0.15rem', borderRadius: '6px', border: '1px solid var(--border-subtle)' }}>
           {(['en', 'hi', 'gu'] as SupportedLang[]).map((lng) => (
             <button
               key={lng}
               onClick={() => setLanguage(lng)}
               style={{
-                padding: '0.25rem 0.45rem',
+                padding: '0.2rem 0.5rem',
                 borderRadius: '4px',
                 fontSize: '0.75rem',
                 fontWeight: currentLang === lng ? 800 : 500,
-                backgroundColor: currentLang === lng ? 'var(--accent-blue)' : 'transparent',
+                backgroundColor: currentLang === lng ? 'var(--accent-purple)' : 'transparent',
                 color: currentLang === lng ? '#FFFFFF' : 'var(--text-muted)',
               }}
             >
