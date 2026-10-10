@@ -4,6 +4,16 @@
 
 MetroRehearse is an operations-grade, client-only web platform and PWA built for station controllers and crowd operations planners at Gujarat Metro Rail Corporation (GMRC). It executes 100% offline in browser storage (IndexedDB) with zero server dependencies, designed to function reliably in **Airplane Mode**.
 
+> **One-Line Pitch**: Offline-first crowd simulation and live tactical telemetry empowering metro controllers to rehearse and manage surge operations safely.
+
+---
+
+## 🎯 Executive Summary & Problem Solved
+
+* **Who it's for:** Station controllers, crowd safety officers, and operations planners at urban transit authorities (tailored for **Gujarat Metro Rail Corporation / GMRC**, Ahmedabad Metro).
+* **The Problem:** Mega-events (such as 100,000+ spectators exiting Narendra Modi Stadium after IPL matches or Navratri gatherings) cause massive, sudden surges at metro stations. Controllers traditionally rely on gut feeling and fixed timetables without tools to test surge interventions beforehand. Furthermore, underground concourses frequently suffer cellular and network blackouts, making cloud applications unusable.
+* **The Solution:** MetroRehearse provides an offline "flight simulator" for crowd surges. Controllers can stress-test 200 stochastic scenarios in under 3 seconds, generate Pareto-optimized action playbooks, dispatch trilingual operational orders, and track concourse ingress in real-time with Bayesian rate updates.
+
 ---
 
 ## 🚉 The Platform at a Glance
