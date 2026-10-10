@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cricket-night",
+    "name": "Cricket Night (IPL / T20 International)",
+    "description": "High-intensity stadium surge immediately following last ball, rapid egress towards Motera Station",
+    "stationId": "motera-stadium",
+    "defaultAttendance": 105000,
+    "defaultMetroShare": 0.42,
+    "releaseCurve": {
+      "shape": "gamma",
+      "startOffsetMin": 5,
+      "peakOffsetMin": 25,
+      "tailDurationMin": 80,
+      "earlyLeaveShare": 0.08
+    },
+    "defaultStaffAvailable": 38,
+    "baselineHeadwayMin": 5,
+    "baselineLastTrainExtMin": 30
+  },
+  {
+    "id": "navratri",
+    "name": "Navratri Mahotsav (Mega Garba)",
+    "description": "Extended late-night festive dispersion with steady groups departing between 11:30 PM and 2:00 AM",
+    "stationId": "old-high-court",
+    "defaultAttendance": 60000,
+    "defaultMetroShare": 0.34,
+    "releaseCurve": {
+      "shape": "broad-gamma",
+      "startOffsetMin": 0,
+      "peakOffsetMin": 45,
+      "tailDurationMin": 120,
+      "earlyLeaveShare": 0.15
+    },
+    "defaultStaffAvailable": 26,
+    "baselineHeadwayMin": 6,
+    "baselineLastTrainExtMin": 60
+  },
+  {
+    "id": "uttarayan",
+    "name": "Uttarayan (International Kite Festival)",
+    "description": "Daytime riverfront surge peaking around sunset as spectators head to metro corridors",
+    "stationId": "sabarmati-railway",
+    "defaultAttendance": 45000,
+    "defaultMetroShare": 0.30,
+    "releaseCurve": {
+      "shape": "twin-peak",
+      "startOffsetMin": 0,
+      "peakOffsetMin": 35,
+      "tailDurationMin": 90,
+      "earlyLeaveShare": 0.12
+    },
+    "defaultStaffAvailable": 20,
+    "baselineHeadwayMin": 6,
+    "baselineLastTrainExtMin": 0
+  },
+  {
+    "id": "normal-peak",
+    "name": "Weekday Evening Peak Rush",
+    "description": "Standard commuter peak wave across IT, university, and commercial corridors",
+    "stationId": "old-high-court",
+    "defaultAttendance": 18000,
+    "defaultMetroShare": 0.65,
+    "releaseCurve": {
+      "shape": "commuter-plateau",
+      "startOffsetMin": 0,
+      "peakOffsetMin": 20,
+      "tailDurationMin": 60,
+      "earlyLeaveShare": 0.05
+    },
+    "defaultStaffAvailable": 14,
+    "baselineHeadwayMin": 7,
+    "baselineLastTrainExtMin": 0
+  },
+  {
+    "id": "ipl-replay",
+    "name": "IPL 2026 Final Replay (Narendra Modi Stadium)",
+    "description": "Historical backtest calibration: record 1,95,868 daily metro journeys, match ended 23:30, last train 02:19",
+    "stationId": "motera-stadium",
+    "defaultAttendance": 110000,
+    "defaultMetroShare": 0.44,
+    "releaseCurve": {
+      "shape": "gamma",
+      "startOffsetMin": 10,
+      "peakOffsetMin": 30,
+      "tailDurationMin": 110,
+      "earlyLeaveShare": 0.06
+    },
+    "defaultStaffAvailable": 45,
+    "baselineHeadwayMin": 5,
+    "baselineLastTrainExtMin": 0
+  }
+]

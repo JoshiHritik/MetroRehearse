@@ -1,0 +1,120 @@
+{
+  "app": {
+    "title": "MetroRehearse",
+    "subtitle": "Ahmedabad Metro Operations Rehearsal & Live Crowd Telemetry",
+    "offlineBadge": "Offline Mode (Airplane Ready)",
+    "onlineBadge": "Connected",
+    "networkCheck": "Verify Offline Cache"
+  },
+  "nav": {
+    "home": "Events",
+    "planEvent": "Plan Event",
+    "rehearsal": "Rehearsal",
+    "playbook": "Optimizer & Playbook",
+    "order": "Event Order",
+    "live": "Live Operations",
+    "assumptions": "Assumptions (A)",
+    "review": "Review",
+    "backtest": "Backtest Replay",
+    "settings": "Settings",
+    "status": "Offline & Data Status",
+    "help": "Help & Guide"
+  },
+  "roles": {
+    "planner": "Operations Planner",
+    "supervisor": "Station Supervisor",
+    "plannerDesc": "Author scenarios, calibrate assumptions, optimize rakes & gate allocations",
+    "supervisorDesc": "Monitor live platform densities, tap gate counts, execute trigger scripts"
+  },
+  "levels": {
+    "level0": "L0: Live AFC Stream",
+    "level1": "L1: Manual Gate Counts",
+    "level2": "L2: Cached Simulation",
+    "level3": "L3: Printed Event Order",
+    "activeSource": "Active Telemetry Tier"
+  },
+  "common": {
+    "assumedTag": "(A)",
+    "assumedTooltip": "Editable placeholder assumption, not an empirical sensor measurement",
+    "save": "Save",
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "print": "Print Event Order (A4)",
+    "resetData": "Reset Demo Data",
+    "loading": "Calculating...",
+    "recomputing": "Running 200 Monte Carlo seeds...",
+    "done": "Completed",
+    "status": "Status",
+    "actions": "Actions",
+    "pax": "pax",
+    "min": "min",
+    "sec": "sec",
+    "paxPerM2": "pax/m²",
+    "density": "Density"
+  },
+  "events": {
+    "listTitle": "Scheduled Event Rehearsals",
+    "newEvent": "Schedule New Event",
+    "emptyList": "No active events found. Create one or restore demo presets.",
+    "eventName": "Event Title",
+    "station": "Metro Station Gateway",
+    "preset": "Crowd Profile Preset",
+    "attendance": "Expected Stadium Attendance",
+    "metroShare": "Estimated Metro Modal Share (A)",
+    "eventEndTime": "Scheduled Event End Time",
+    "staffAvailable": "Staff Deployed",
+    "status": {
+      "draft": "Draft",
+      "rehearsed": "Rehearsed",
+      "briefed": "Briefed",
+      "live": "Live In Progress",
+      "completed": "Completed & Reviewed"
+    }
+  },
+  "rehearsal": {
+    "title": "Tactical Crowd Rehearsal",
+    "runButton": "Run Simulation (200 Seeds)",
+    "running": "Simulating Monte Carlo stochastic paths...",
+    "scrubber": "Time Scrubber (T-0 to T+180 min)",
+    "stationView": "Motera Concourse & Platform Schematic 2D",
+    "riskCardTitle": "Quantile Risk Outlook",
+    "riskOvercrowd": "Overcrowding Risk (P(Density > 4.5))",
+    "clearanceP50": "Median Station Clear Time (P50)",
+    "clearanceP90": "Conservative Clear Time (P90)",
+    "gateWaitP90": "Peak Turnstile Wait (P90)",
+    "peakDensity": "Peak Platform Load (P50)",
+    "densityLegend": "Safe (<3.0) | Caution (3.0-4.5) | Critical (>4.5 pax/m²)"
+  },
+  "playbook": {
+    "title": "Tactical Playbook & Plan Optimizer",
+    "subtitle": "Explore 300 candidate action combinations refined across Pareto frontiers",
+    "weights": "Operational Priorities",
+    "weightSafety": "Crowd Safety & Crush Prevention",
+    "weightTime": "Station Clearance Speed",
+    "weightCost": "Operational Cost (Extra Trains / Staff)",
+    "optimizeBtn": "Synthesize Optimal Action Plans",
+    "candidateRank": "Plan Option",
+    "baseline": "Current Baseline Timetable",
+    "recommended": "Recommended Tactical Intervention",
+    "applyPlan": "Apply Plan to Event Order"
+  },
+  "live": {
+    "title": "Live Station Concourse Telemetry",
+    "wakeLockActive": "Screen Wake Lock ON",
+    "wakeLockInactive": "Screen Wake Lock OFF",
+    "nextTrainIn": "Next Southbound Rake In",
+    "observedVsPredicted": "Observed Arrivals vs Simulation Prior",
+    "bayesianRate": "Updated Ingress Rate (Bayesian Posterior)",
+    "tapArrivals": "+10 Ingress Pax",
+    "tapShortQueue": "+25 Concourse Queue",
+    "tapLongQueue": "+50 Stadium Surge",
+    "undo": "Undo Last Count",
+    "triggerActive": "Active Trigger Warning"
+  },
+  "backtest": {
+    "title": "Historical Backtest Replay: IPL 2026 Final",
+    "disclaimer": "Consistency check using public ridership figures (1,95,868 daily journeys). Not predictive validation.",
+    "baselineResult": "Baseline Schedule (12:30 AM Cutoff): 14,200 Stranded Passengers",
+    "optimizedResult": "Optimized Extension (02:19 AM Cutoff + 62 Extra Trains): Full Clearance at 02:14 AM"
+  }
+}

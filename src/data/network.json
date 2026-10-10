@@ -1,0 +1,227 @@
+{
+  "lines": [
+    {
+      "id": "ns-red",
+      "name": "North-South Corridor",
+      "nameGu": "ઉત્તર-દક્ષિણ કોરિડોર",
+      "nameHi": "उत्तर-दक्षिण कॉरिडोर",
+      "color": "#E11D48",
+      "bgGlow": "rgba(225, 29, 72, 0.35)",
+      "terminus": ["Motera Stadium", "APMC"]
+    },
+    {
+      "id": "ew-blue",
+      "name": "East-West Corridor",
+      "nameGu": "પૂર્વ-પશ્ચિમ કોરિડોર",
+      "nameHi": "पूर्व-पश्चिम कॉरिडोर",
+      "color": "#0284C7",
+      "bgGlow": "rgba(2, 132, 199, 0.35)",
+      "terminus": ["Thaltej Gam", "Vastral Gam"]
+    }
+  ],
+  "stations": [
+    {
+      "id": "motera-stadium",
+      "name": "Motera Stadium",
+      "nameGu": "મોટેરા સ્ટેડિયમ",
+      "nameHi": "मोटेरा स्टेडियम",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "isKeyTerminal": true,
+      "x": 280,
+      "y": 60,
+      "description": "Primary transit gateway for Narendra Modi Cricket Stadium (110,000 capacity)"
+    },
+    {
+      "id": "sabarmati-railway",
+      "name": "Sabarmati Railway Station",
+      "nameGu": "સાબરમતી રેલવે સ્ટેશન",
+      "nameHi": "साबरमती रेलवे स्टेशन",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 110
+    },
+    {
+      "id": "aec",
+      "name": "AEC",
+      "nameGu": "એઈસી",
+      "nameHi": "एईसी",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 150
+    },
+    {
+      "id": "ranip",
+      "name": "Ranip",
+      "nameGu": "રાણીપ",
+      "nameHi": "राणिप",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 190
+    },
+    {
+      "id": "vadaj",
+      "name": "Vadaj",
+      "nameGu": "વાડજ",
+      "nameHi": "वाडज",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 230
+    },
+    {
+      "id": "vijay-nagar",
+      "name": "Vijay Nagar",
+      "nameGu": "વિજય નગર",
+      "nameHi": "विजय नगर",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 270
+    },
+    {
+      "id": "usmanpura",
+      "name": "Usmanpura",
+      "nameGu": "ઉસ્માનપુરા",
+      "nameHi": "उस्मानपुरा",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 310
+    },
+    {
+      "id": "old-high-court",
+      "name": "Old High Court",
+      "nameGu": "જૂની હાઈકોર્ટ",
+      "nameHi": "ओल्ड हाई कोर्ट",
+      "lineIds": ["ns-red", "ew-blue"],
+      "isInterchange": true,
+      "x": 280,
+      "y": 360,
+      "description": "Central Interchange station between NS and EW corridors"
+    },
+    {
+      "id": "gandhigram",
+      "name": "Gandhigram",
+      "nameGu": "ગાંધીગ્રામ",
+      "nameHi": "गांधीग्राम",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 410
+    },
+    {
+      "id": "paldi",
+      "name": "Paldi",
+      "nameGu": "પાલડી",
+      "nameHi": "पालडी",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 450
+    },
+    {
+      "id": "shreyas",
+      "name": "Shreyas",
+      "nameGu": "શ્રેયસ",
+      "nameHi": "श्रेयस",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 490
+    },
+    {
+      "id": "rajiv-nagar",
+      "name": "Rajiv Nagar",
+      "nameGu": "રાજીવ નગર",
+      "nameHi": "राजीव नगर",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 530
+    },
+    {
+      "id": "jivraj-park",
+      "name": "Jivraj Park",
+      "nameGu": "જીવરાજ પાર્ક",
+      "nameHi": "जीवराज पार्क",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 570
+    },
+    {
+      "id": "apmc",
+      "name": "APMC",
+      "nameGu": "એપીએમસી",
+      "nameHi": "एपीएमसी",
+      "lineIds": ["ns-red"],
+      "isInterchange": false,
+      "x": 280,
+      "y": 610
+    },
+    {
+      "id": "thaltej-gam",
+      "name": "Thaltej Gam",
+      "nameGu": "થલતેજ ગામ",
+      "nameHi": "थलतेज गाम",
+      "lineIds": ["ew-blue"],
+      "isInterchange": false,
+      "x": 60,
+      "y": 360
+    },
+    {
+      "id": "gujarat-university",
+      "name": "Gujarat University",
+      "nameGu": "ગુજરાત યુનિવર્સિટી",
+      "nameHi": "गुजरात यूनिवर्सिटी",
+      "lineIds": ["ew-blue"],
+      "isInterchange": false,
+      "x": 130,
+      "y": 360
+    },
+    {
+      "id": "sp-stadium",
+      "name": "SP Stadium",
+      "nameGu": "એસ.પી. સ્ટેડિયમ",
+      "nameHi": "एसपी स्टेडियम",
+      "lineIds": ["ew-blue"],
+      "isInterchange": false,
+      "x": 200,
+      "y": 360
+    },
+    {
+      "id": "kalupur-railway",
+      "name": "Kalupur Railway Station",
+      "nameGu": "કાલુપુર રેલવે સ્ટેશન",
+      "nameHi": "कालुपुर रेलवे स्टेशन",
+      "lineIds": ["ew-blue"],
+      "isInterchange": false,
+      "x": 370,
+      "y": 360
+    },
+    {
+      "id": "kankaria-east",
+      "name": "Kankaria East",
+      "nameGu": "કાંકરિયા ઈસ્ટ",
+      "nameHi": "कांकरिया ईस्ट",
+      "lineIds": ["ew-blue"],
+      "isInterchange": false,
+      "x": 440,
+      "y": 360
+    },
+    {
+      "id": "vastral-gam",
+      "name": "Vastral Gam",
+      "nameGu": "વસ્ત્રાલ ગામ",
+      "nameHi": "वस्त्राल गाम",
+      "lineIds": ["ew-blue"],
+      "isInterchange": false,
+      "x": 520,
+      "y": 360
+    }
+  ]
+}

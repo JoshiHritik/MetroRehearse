@@ -1,0 +1,46 @@
+{
+  "motera-stadium": {
+    "id": "motera-stadium",
+    "name": "Motera Stadium",
+    "totalConcourseAreaM2": 1800,
+    "platformAreaM2": 950,
+    "maxGates": 8,
+    "defaultOpenGates": 4,
+    "gateBaseRatePaxPerMin": 28,
+    "gateStaffBonusPaxPerMin": 4,
+    "stairEscalatorCapacityPaxPerMin": 180,
+    "safePlatformDensity": 3.0,
+    "meteringDensityTrigger": 3.8,
+    "criticalPlatformDensity": 4.8,
+    "trainCapacity": 1000,
+    "defaultFreeShareOnArrival": 0.85,
+    "zones": [
+      { "id": "forecourt", "name": "Stadium Plaza & Security Screening", "capacity": 15000 },
+      { "id": "concourse", "name": "Concourse Ticketing & AFC Gate Line", "capacity": 6500 },
+      { "id": "stairs", "name": "Stairwells & Dual Escalator Banks", "capacity": 1200 },
+      { "id": "platform-sb", "name": "Platform 1 (Southbound to APMC)", "areaM2": 950, "capacity": 4500 }
+    ]
+  },
+  "generic-station": {
+    "id": "generic-station",
+    "name": "Standard Metro Station",
+    "totalConcourseAreaM2": 900,
+    "platformAreaM2": 550,
+    "maxGates": 6,
+    "defaultOpenGates": 3,
+    "gateBaseRatePaxPerMin": 25,
+    "gateStaffBonusPaxPerMin": 3,
+    "stairEscalatorCapacityPaxPerMin": 120,
+    "safePlatformDensity": 2.8,
+    "meteringDensityTrigger": 3.5,
+    "criticalPlatformDensity": 4.5,
+    "trainCapacity": 800,
+    "defaultFreeShareOnArrival": 0.75,
+    "zones": [
+      { "id": "forecourt", "name": "Station Approach & Street Entry", "capacity": 5000 },
+      { "id": "concourse", "name": "Concourse & Fare Gates", "capacity": 3000 },
+      { "id": "stairs", "name": "Vertical Circulation", "capacity": 600 },
+      { "id": "platform", "name": "Island Platform", "areaM2": 550, "capacity": 2500 }
+    ]
+  }
+}

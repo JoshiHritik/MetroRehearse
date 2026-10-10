@@ -1,0 +1,126 @@
+/* MetroRehearse Tactical Event Order Print Stylesheet */
+/* A4 Portrait, High-contrast black & white, operational format */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm 15mm 15mm;
+  }
+
+  html, body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Indic font support in print */
+  [lang="hi"], [lang="gu"] {
+    line-height: 1.6 !important;
+  }
+
+  /* Hide screen-only interactive shell */
+  header, nav, .no-print, .top-bar, .nav-bar, .offline-banner, button {
+    display: none !important;
+  }
+
+  /* Container expands to full printable page */
+  .print-container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .print-page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .print-header {
+    border-bottom: 2pt solid #000000;
+    padding-bottom: 8pt;
+    margin-bottom: 14pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .print-header h1 {
+    font-size: 18pt;
+    font-weight: 800;
+    margin: 0;
+    color: #000000;
+  }
+
+  .print-header .meta {
+    font-size: 9pt;
+    text-align: right;
+  }
+
+  .print-disclaimer {
+    border: 1pt solid #444444;
+    background-color: #F8F8F8 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    padding: 6pt 10pt;
+    margin-bottom: 12pt;
+    font-size: 8.5pt;
+    font-style: italic;
+  }
+
+  .print-section {
+    margin-bottom: 14pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-section h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    border-bottom: 1pt solid #000000;
+    padding-bottom: 3pt;
+    margin-bottom: 6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .print-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+  }
+
+  .print-table th, .print-table td {
+    border: 1pt solid #000000;
+    padding: 4pt 6pt;
+    text-align: left;
+  }
+
+  .print-table th {
+    background-color: #ECECEC !important;
+    font-weight: 700;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .badge-assumed {
+    background: transparent !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    font-weight: bold;
+    padding: 1px 3px !important;
+  }
+
+  .script-box {
+    border-left: 3pt solid #000000;
+    padding-left: 10pt;
+    margin: 6pt 0;
+    font-style: italic;
+  }
+}

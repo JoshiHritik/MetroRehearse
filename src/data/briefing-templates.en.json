@@ -1,0 +1,27 @@
+[
+  {
+    "key": "summary",
+    "title": "Tactical Operations Summary",
+    "text": "OPERATIONAL BRIEFING FOR {eventName} AT {stationName}. Expected venue attendance is {attendance} pax with an estimated metro egress share of {metroSharePct}% ({metroPax} passengers). Plan prescribes {gatesOpen} active AFC turnstiles, a target train headway of {headwayMin} minutes, and service extension until {lastTrainTime} (+{lastTrainExtMin} min over baseline timetable)."
+  },
+  {
+    "key": "timeline",
+    "title": "Operational Sequence (T-60 to T+120 min)",
+    "text": "• T-60 min: Concourse marshals report to stations; verify {gatesOpen} automated fare gates operational in entry mode.\n• T-15 min: Security gate pre-sorting activated; queue switchbacks deployed at stadium concourse.\n• T+00 min: Event concludes; station enters post-event ingress mode.\n• T+20 min: Primary surge arrival window; verify southbound headway maintained at {headwayMin} min.\n• T+45 min: Concourse metering activated if platform density exceeds {meteringLimit} pax/m².\n• T+90 min: Secondary surge clearance; transition from express clearing to normal sweep.\n• T+120 min: Last scheduled special train clears platform at {lastTrainTime}; station lockup sequence."
+  },
+  {
+    "key": "staffing",
+    "title": "Staff Deployment & Zone Allocations",
+    "text": "Total deployed personnel: {staffRequired} staff members.\n• Forecourt & Security Queues: {staffForecourt} marshals directing flow towards turnstiles.\n• AFC Gate Line: {staffGates} ticketing staff assisting passengers with QR ticket scanning.\n• Platform Edge & Stairs: {staffPlatform} platform screen door safety supervisors preventing surging."
+  },
+  {
+    "key": "triggers",
+    "title": "Tactical Thresholds & Trigger Rules",
+    "text": "1. METERING RULE: If Platform density reaches {meteringLimit} pax/m² (LOS E), Gate Controller must throttle entry gates to 50% throughput for 3-minute intervals.\n2. HOLD RULE: If platform holding reaches {criticalLimit} pax/m² (LOS F), immediately initiate Concourse Gate Hold (red line barrier).\n3. HEADWAY ESCALATION: If concourse queue spills past outer canopy for > 10 min, dispatch reserve rake from Sabarmati Depot."
+  },
+  {
+    "key": "announcements",
+    "title": "Public Address & Passenger Guidance Scripts",
+    "text": "Concourse Announcement:\n\"Attention passengers at {stationName}. All entry gates are active. Please keep your QR tickets or Metro cards ready before the turnstile. Trains are operating every {headwayMin} minutes southbound towards APMC.\"\n\nPlatform Safety Announcement:\n\"Stand behind the yellow safety tactile line. Do not lean on platform screen doors. Please board uniformly along the entire 3-car rake length.\""
+  }
+]

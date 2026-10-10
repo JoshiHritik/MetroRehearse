@@ -1,0 +1,78 @@
+{
+  "id": "gmrc-motera-default-v1",
+  "label": "GMRC Motera Stadium Baseline Assumptions (A)",
+  "values": {
+    "metroShare": {
+      "value": 0.42,
+      "unit": "ratio",
+      "assumed": true,
+      "note": "Assumed metro modal split for stadium spectators based on parking limits and feeder buses."
+    },
+    "gateBaseRate": {
+      "value": 28,
+      "unit": "pax/min/gate",
+      "assumed": true,
+      "note": "Standard AFC turnstile throughput with paper QR and smart card mix."
+    },
+    "gateStaffBonus": {
+      "value": 4,
+      "unit": "pax/min/staff",
+      "assumed": true,
+      "note": "Throughput gain when customer care marshal assists passengers with QR scanner alignment."
+    },
+    "maxStaffGateBonus": {
+      "value": 10,
+      "unit": "pax/min/gate",
+      "assumed": true,
+      "note": "Diminishing returns threshold for additional marshals at gate line."
+    },
+    "platformAreaM2": {
+      "value": 950,
+      "unit": "m²",
+      "assumed": true,
+      "note": "Effective clear passenger holding surface on Motera Island platform."
+    },
+    "safeDensity": {
+      "value": 3.0,
+      "unit": "pax/m²",
+      "assumed": true,
+      "note": "Level of Service D ceiling; free movement and platform edge clearances maintained."
+    },
+    "meteringDensityTrigger": {
+      "value": 3.8,
+      "unit": "pax/m²",
+      "assumed": true,
+      "note": "Level of Service E threshold triggering concourse gate hold to prevent platform crowd surge."
+    },
+    "criticalDensity": {
+      "value": 4.8,
+      "unit": "pax/m²",
+      "assumed": true,
+      "note": "Hazardous crush density (Level of Service F); risk of crowd surge and platform edge push."
+    },
+    "trainCapacity": {
+      "value": 1000,
+      "unit": "pax/train",
+      "assumed": true,
+      "note": "GMRC 3-car trainset nominal crush capacity (6 pax/m² standees)."
+    },
+    "freeShareOnArrival": {
+      "value": 0.85,
+      "unit": "ratio",
+      "assumed": true,
+      "note": "Proportion of train capacity vacant when arriving at terminal/origin station."
+    },
+    "stairEscalatorRate": {
+      "value": 180,
+      "unit": "pax/min",
+      "assumed": true,
+      "note": "Combined capacity of fixed stairwells and ascending/descending escalators."
+    },
+    "concourseDwellSec": {
+      "value": 45,
+      "unit": "seconds",
+      "assumed": true,
+      "note": "Mean passenger transit time from ticket check to stairwell foot."
+    }
+  }
+}

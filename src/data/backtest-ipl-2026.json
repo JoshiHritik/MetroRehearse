@@ -1,0 +1,25 @@
+{
+  "eventId": "ipl-2026-final",
+  "title": "IPL 2026 Final — Narendra Modi Stadium Backtest Replay",
+  "date": "2026-05-31",
+  "venue": "Narendra Modi Stadium, Motera, Ahmedabad",
+  "stadiumCapacity": 110000,
+  "publicData": {
+    "systemJourneysEventDay": 195868,
+    "systemJourneysBaselineWeekPrior": 117939,
+    "netEventSurgeJourneys": 77929,
+    "plannedServiceEnd": "00:30 (12:30 AM)",
+    "actualLastTrainDeparture": "02:19 (02:19 AM)",
+    "extraServicesOperated": 62,
+    "matchEndEpochTime": "23:30 (11:30 PM)",
+    "sourceNote": "Official GMRC operational disclosures & DeshGujarat Metro Ridership bulletin, May 2026"
+  },
+  "calibration": {
+    "targetEgressPax": 46200,
+    "inferredMetroShare": 0.42,
+    "concourseGateCount": 8,
+    "baselineClosingTimeMinAfterMatch": 60,
+    "actualClosingTimeMinAfterMatch": 169
+  },
+  "caveat": "IMPORTANT OPERATIONAL DISCLAIMER: Replaying and tuning model parameters to match a known historical outcome is an operational consistency check and stress-test, NOT statistical validation of future events."
+}
